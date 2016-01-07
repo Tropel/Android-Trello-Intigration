@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center|left"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/board_name"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:text="Board Name"
+        android:layout_centerVertical="true"
+        android:gravity="center|left"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+       />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/right_arrow"/>
+
+</RelativeLayout>

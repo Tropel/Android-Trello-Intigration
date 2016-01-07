@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/csrd_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/card_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_button"
+            android:onClick="BACK" />
+
+        <TextView
+            android:id="@+id/card_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/card_back"
+            android:text="Report Problem(Add Card)"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10dp">
+        <RelativeLayout
+            android:id="@+id/spinner_relative"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/card_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="15dp"
+                android:textSize="15sp"
+                android:textStyle="normal"></Spinner>
+
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/card_subject"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/spinner_relative"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:hint="Enter Subject Here"
+            android:imeOptions="actionNext"
+            android:paddingLeft="10dp">
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/trello_engg_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/card_subject"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:hint="Enter Engg. Name Here"
+            android:imeOptions="actionNext"
+            android:paddingLeft="10dp">
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/trello_desription"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/btn_addcard"
+            android:layout_below="@+id/trello_engg_name"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:hint="Enter Description Here"
+            android:imeOptions="actionDone"
+            android:paddingLeft="10dp">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_addcard"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorAccent"
+            android:text="ADD CARD"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
